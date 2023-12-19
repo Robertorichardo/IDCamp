@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="syle.css" />
+    <title>Artikel</title>
+    <style>
+      body {
+        background-color: rgb(181, 214, 253);
+        margin: 0;
+        padding: 0;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: navy;
+        color: white;
+        padding: 36px 36px;
+        padding-right: 80px;
+        margin: 30px 0 0 0;
+      }
+
+      main {
+        margin: 0px auto 0 auto;
+        width: 60vw;
+        padding: 30px;
+        /* background-color: rgba(255, 255, 255, 0.7); */
+        border-radius: 24px;
+        background: linear-gradient(
+          180deg,
+          rgb(114, 196, 231),
+          rgba(1, 236, 253, 0.4),
+          rgba(0, 0, 0, 0)
+        );
+      }
+      h1 {
+        text-align: center;
+        color: black;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .dekripsi {
+        font-size: 14px;
+        font-style: italic;
+        color: grey;
+        text-align: center;
+      }
+      h2 {
+        font-size: 10px;
+      }
+      span {
+        text-align: center;
+        font-weight: 600;
+      }
+      .dekripsi_bahan {
+        font-size: 14px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      tr,
+      td {
+        border: 2px solid blue;
+      }
+      th {
+        padding: 6px 0;
+      }
+      .content {
+        text-align: center;
+      }
+      th {
+        padding: 6px 0;
+        background-color: salmon;
+      }
+      .bahan {
+        padding-left: 10px;
+      }
+      tr {
+        background-color: burlywood;
+      }
+      tr:hover {
+        background-color: gray;
+      }
+      ul,
+      ol {
+        list-style: none;
+        margin: 0;
+      }
+      ul li a,
+      ol li a {
+        text-decoration: none;
+        color: white;
+      }
+      ul li,
+      ol li {
+        margin-bottom: 4px;
+      }
+
+      .brand {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items:baseline;
+      }
+      .brand p {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: rgb(124, 118, 217);
+      }
+
+      .gambar img:hover {
+        transform: scale(1.1);
+      }
+
+      .gambar {
+        width: fit-content;
+        margin: auto;
+        border-radius: 24px;
+        overflow: hidden;
+        transition: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+      }
+      #daftar {
+        color: white;
+        text-decoration: none;
+      }
+
+      #daftar span {
+        background-color: rgb(0, 0, 216);
+        padding: 10px 12px;
+        border-radius: 10px;
+      }
+      #daftar span:hover {
+        background-color: rgb(2, 2, 121);
+      }
+
+      .garis {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(0, 0, 48);
+      }
+      header {
+        background-color: rgba(225, 255, 255, 0.6);
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        z-index: 10;
+      }
+
+      header nav ul li a {
+        color: black;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      header nav ul li a:hover {
+        color: white;
+        background-color: blue;
+        text-decoration: none;
+        padding: 6px;
+        border-radius: 4px;
+      }
+      header nav ul {
+        display: flex;
+        justify-content: space-around;
+      }
+      .jarak {
+        height: 100px;
+      }
+      @media screen and (max-width: 430px) {
+        header nav ul {
+          display: block;
+          text-align: center;
+        }
+        main {
+          width: 75vw;
+        }
+        h1 {
+          margin: 0 0 30px 0;
+        }
+
+        .daftar_div {
+          text-align: center;
+        }
+
+        .gambar img {
+          width: 100%;
+        }
+        footer {
+          flex-direction: column;
+          gap: 20px;
+        }
+        header nav ul {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Informasi</a></li>
+          <li><a href="#">Abaoy US</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="jarak"></div>
+    <main>
+      <h1>Resep ayam</h1>
+      <div class="daftar_div">
+        <a href="from.html" id="daftar">
+          <span> Daftar sekarang </span>
+        </a>
+      </div>
+
+      <br />
+
+      <div class="gambar">
+        <img src="Img/ayamgoreng.jpg" alt="ayam goreng" width="100%" />
+      </div>
+
+      <p class="dekripsi">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+        sapiente unde veritatis quaerat neque modi, quo illum temporibus <br />
+        placeat ipsa eaque praesentium culpa, optio voluptatibus cumque sequi
+        consequatur harum aliquam?
+      </p>
+
+      <div class="garis"></div>
+      <h2>Bahan-bahan</h2>
+
+      <span>Dekripsi</span>
+      <p class="dekripsi_bahan">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+        accusantium, quasi, aperiam molestiae aliquid eveniet animi totam quos
+        doloribus minima distinctio blanditiis repudiandae dolore illo
+        asperiores quibusdam ad placeat dolores?
+      </p>
+
+      <table border="1">
+        <tr>
+          <th>Bahan</th>
+          <th>Jumlah</th>
+        </tr>
+        <tr>
+          <td class="bahan">Tepung</td>
+          <td class="content">1 KG</td>
+        </tr>
+        <tr>
+          <td class="bahan">Bawang</td>
+          <td class="content">1/2 Kg</td>
+        </tr>
+        <tr>
+          <td class="bahan">Air</td>
+          <td class="content">Secukupnya</td>
+        </tr>
+        <tr>
+          <td class="bahan">Ayam</td>
+          <td class="content">1 Kg</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <div class="brand">
+        <svg
+          width="24"
+          height="24"
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          fill="currentColor"
+          stroke-linejoin="round"
+          stroke-miterlimit="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m11.998 2c5.517 0 9.997 4.48 9.997 9.998 0 5.517-4.48 9.997-9.997 9.997-5.518 0-9.998-4.48-9.998-9.997 0-5.518 4.48-9.998 9.998-9.998zm0 1.5c-4.69 0-8.498 3.808-8.498 8.498s3.808 8.497 8.498 8.497z"
+            fill-rule="nonzero"
+          />
+        </svg>
+
+        <p>IDN</p>
+      </div>
+      <ul>
+        <li><a href="#">Alamt</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Ikuti kami</a></li>
+      </ul>
+      <ol>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">twitter</a></li>
+      </ol>
+    </footer>
+  </body>
+</html>
